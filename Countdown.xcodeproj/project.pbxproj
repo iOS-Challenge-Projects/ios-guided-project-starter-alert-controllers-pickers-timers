@@ -37,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AD51FD23D07111001ED31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD02B68A228292AC003F3D78 /* CountdownViewController.swift */,
+				BD02B69A228292CD003F3D78 /* Countdown.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04AD51FE23D07119001ED31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD02B68C228292AC003F3D78 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BD02B67C228292AC003F3D78 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				BD02B688228292AC003F3D78 /* AppDelegate.swift */,
-				BD02B68A228292AC003F3D78 /* CountdownViewController.swift */,
-				BD02B69A228292CD003F3D78 /* Countdown.swift */,
-				BD02B68C228292AC003F3D78 /* Main.storyboard */,
+				04AD51FD23D07111001ED31E /* Controller */,
+				04AD51FE23D07119001ED31E /* View */,
 				BD02B68F228292AD003F3D78 /* Assets.xcassets */,
 				BD02B691228292AD003F3D78 /* LaunchScreen.storyboard */,
 				BD02B694228292AD003F3D78 /* Info.plist */,
@@ -287,13 +303,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = LAWSHWK9RN;
 				INFOPLIST_FILE = Countdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Countdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FGT.lambdaschool.Countdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,13 +321,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = LAWSHWK9RN;
 				INFOPLIST_FILE = Countdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Countdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FGT.lambdaschool.Countdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

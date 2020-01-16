@@ -22,7 +22,7 @@
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUQ-no-MEg">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="216"/>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15N-IW-mFQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="15N-IW-mFQ">
                                         <rect key="frame" x="0.0" y="224" width="382" height="119.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <nil key="textColor"/>
@@ -38,6 +38,9 @@
                                         <state key="normal" title="START">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Le-vi-tEs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ph-vS-s5x">
                                         <rect key="frame" x="0.0" y="419.5" width="382" height="60"/>
@@ -49,6 +52,9 @@
                                         <state key="normal" title="RESET">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yea-dj-lnJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +67,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="countdownPicker" destination="MUQ-no-MEg" id="BLk-RA-no2"/>
+                        <outlet property="resetButton" destination="8Ph-vS-s5x" id="IwJ-st-ZCP"/>
+                        <outlet property="startButton" destination="83R-YC-XYf" id="0Yj-eU-430"/>
+                        <outlet property="timeLabel" destination="15N-IW-mFQ" id="YQd-XU-9Da"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
